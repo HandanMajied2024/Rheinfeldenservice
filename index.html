@@ -1,0 +1,58 @@
+<!-- UM VORSCHAU ZU SEHEN, FOLGENDES IN
+  TERMINAL TIPPEN: xdg-open index.html
+-->
+<!DOCTYPE html>
+<!--Sagt dem Browser, dass er die aktuelle,
+ neue Version von HTML also HTML5 nutzen soll-->
+
+<html lang="de" dir="auto">
+<!--Starttag für HTML-Document-->
+<!-- Attribute stehen immer im öffnenden Tag-->
+<!-- lang="de" ist ein Attribut gibt Sprache 
+    der Website an-->
+<!-- dir="ltr" gibt Schreibrichtung an-->
+
+<head>
+    <!-- Nicht-lesbarer Teil der Website, der 
+     Informationen über die Website enthält-->
+
+    <meta charset="UTF-8">
+    <!--Meta-Tags geben Browsern technische Infos-->
+    <!-- Gibt an welche Zeichen wie bswp. 
+        Umlaute verwendet werden-->
+    <!-- charset = character set-->
+    <!-- Mit name="" content="" kann man in Meta-Tags 
+        verschiedenen Infos angeben-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Handan Majied">
+    <meta name="website-birthday" content="09.04.2025">
+    <meta name="description" content="This Website is the official CV of the computer science student Handan Majied">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>CV Handan Majied</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Verbindet HTML-Seite mit CSS-Datei-->
+    <!--href="style.css" = Die CSS-Datei
+        liegt im selben Ordner und heißt style.css-->
+    <link rel="icon" href="musst du noch machen">
+
+</head>
+
+<body>
+    <!-- Sichtbarer Bereich der Website-->
+    <h1 id="firstTitle" class="ueberschrift" title="Should say Tooltip duuuuh">Überschrift 1</h1>
+    <!-- Überschriften haben auch attribute-->
+    <!-- es gibt h1 bis h6 von groß zu klein-->
+    <button id="firstButton" class="knopf" name="testbutton1" value="12" title="Testbutton duuuuuuh" onclick="sageHallo()">Click
+        meeee</button>
+    <script src="script.js"></script>
+    <!--Ladet die Datei script.js, die im selben Ordner liegt.
+    Sollte immer am Ende von Body stehen!-->
+    <!--Wenn du irgendwann mehrsprachige Inhalte hast,
+    kannst du auch lang="de" z. B. in einzelnen Absätzen setzen:
+        <p lang="en">This paragraph is in English.</p>-->
+</body>
+
+</html>
+
