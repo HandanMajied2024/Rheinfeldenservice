@@ -1,0 +1,19 @@
+    <h1 id="firstTitle" class="ueberschrift" title="Should say Tooltip duuuuh">Überschrift 1</h1>
+    <!-- Überschriften haben auch attribute-->
+    <!-- es gibt h1 bis h6 von groß zu klein-->
+    <button id="firstButton" class="knopf" name="testbutton1" value="12" title="Testbutton duuuuuuh" onclick="sageHallo()">Click
+        meeee</button>
+
+semantische Tags:
+
+    <header> → Kopfbereich (z. B. Logo, Navigation)
+
+    <nav> → Navigation (Links zu anderen Seiten)
+
+    <main> → Hauptinhalt der Seite
+
+    <section> → Abschnitt mit thematisch zusammenhängendem Inhalt
+
+    <article> → eigenständiger Inhalt (z. B. Blogbeitrag)
+
+    <footer> → Fußbereich (z. B. Kontakt, Impressum)

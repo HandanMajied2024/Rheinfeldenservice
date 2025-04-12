@@ -1,6 +1,14 @@
 <!-- UM VORSCHAU ZU SEHEN, FOLGENDES IN
   TERMINAL TIPPEN: xdg-open index.html
+  Website veröffentlichen:
+  1. auf github repo FristWebsite gehen:
+    https://github.com/HandanMajied2024/FirstWebsite
+  2. Oben auf Settings (neben Insights)
+  3. Bei Code und automation runter zu Pages
+  4. Bei Branch, statt "None" "main" eingeben und Saven
+  5. Bei deaktivierung eif wieder None machen
 -->
+
 <!DOCTYPE html>
 <!--Sagt dem Browser, dass er die aktuelle,
  neue Version von HTML also HTML5 nutzen soll-->
@@ -41,11 +49,17 @@
 
 <body>
     <!-- Sichtbarer Bereich der Website-->
-    <h1 id="firstTitle" class="ueberschrift" title="Should say Tooltip duuuuh">Überschrift 1</h1>
-    <!-- Überschriften haben auch attribute-->
-    <!-- es gibt h1 bis h6 von groß zu klein-->
-    <button id="firstButton" class="knopf" name="testbutton1" value="12" title="Testbutton duuuuuuh" onclick="sageHallo()">Click
-        meeee</button>
+    <header>
+    <!--Kopfbereich der Seite--> 
+        <div class="container">
+        <!--HTML-Tag-->
+            <div class="logo">
+                <img src="pictures/logo.png" alt="Werkstatt Logo">
+            </div>
+            <nav class="navigation"></nav>
+            <!-- Menülleiste → Navigation (Links zu anderen Seiten)-->
+        </div>
+    </header>
     <script src="script.js"></script>
     <!--Ladet die Datei script.js, die im selben Ordner liegt.
     Sollte immer am Ende von Body stehen!-->
