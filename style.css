@@ -1,10 +1,28 @@
 body {
     font-family: sans-serif;
     /*Aussehen des gesamten <body>-Bereichs gestalten*/
-    background-color: #ffffff;
+    background-color:azure;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 10px;
     /*<body> oben 50 Pixel Abstand zur Browserkante.*/
     /*margin ist der Außenabstand
     margin-top = Abstand oben*/
+}
+
+header {
+    /*CSS erkennt automatisch das HTML-Tag header*/
+    background-color: darkred;
+    padding: 10px           40px;
+    /* Abstand des Inhalts des Inhalts 10 oben/unten 40 links/rechts*/
+    border-bottom: 10px solid #000000;
+    border-top: 10px solid #000000;
+    border-left: 10px solid #000000;
+    border-right: 10px solid #000000;
+}
+
+.container {
+    /*Start des CSS-Blocks für <div class="container"> aus deinem HTML*/
+    /*Container ist das Div in dem das logo und das menü nav sind*/
+    display: flex;
+    
 }
