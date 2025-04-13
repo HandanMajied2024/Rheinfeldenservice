@@ -1,7 +1,7 @@
 body {
     font-family: sans-serif;
     /*Aussehen des gesamten <body>-Bereichs gestalten*/
-    background-color:azure;
+    background-color: azure;
     text-align: center;
     margin-top: 10px;
     /*<body> oben 50 Pixel Abstand zur Browserkante.*/
@@ -11,18 +11,40 @@ body {
 
 header {
     /*CSS erkennt automatisch das HTML-Tag header*/
-    background-color: darkred;
-    padding: 10px           40px;
+    background-color: rgb(219, 178, 178);
+    padding: 10px 40px;
     /* Abstand des Inhalts des Inhalts 10 oben/unten 40 links/rechts*/
-    border-bottom: 10px solid #000000;
+    
+    /*border-bottom: 10px solid #000000;
     border-top: 10px solid #000000;
     border-left: 10px solid #000000;
-    border-right: 10px solid #000000;
+    border-right: 10px solid #000000;*/
 }
 
 .container {
-    /*Start des CSS-Blocks für <div class="container"> aus deinem HTML*/
+    /*Start des class CSS-Blocks für <div class="container"> aus deinem HTML*/
     /*Container ist das Div in dem das logo und das menü nav sind*/
+    /* bei Klassen macht man immer einen Punkt und dann den namen*/
     display: flex;
-    
+    /*macht, dass die elem nebeneinander stehen*/
+    justify-content: space-between;
+    /*make space between the two elements placing the logo on the far left and the menu on the far right*/
+    /*play with this later----------------------------------------------*/
+    align-items: center;
+    /*macht elems vertikal mittig*/
+    /*funktioniert nur wenn ul teil eines Flex-containers ist*/
+}
+
+.logo img {
+    height: 150px;
+    width: auto;
+}
+
+.navigation ul{
+    /*bei listelem muss man zusätzlich die liste angeben hier ul*/
+    display: flex; /*macht liste horizontal*/
+    list-style: none; /*entfernt aufzählungspunkte*/
+    gap: 30px;
+    margin: 0;
+    padding: 0;
 }

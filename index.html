@@ -1,85 +1,43 @@
-<!-- UM VORSCHAU ZU SEHEN, FOLGENDES IN
-  TERMINAL TIPPEN: xdg-open index.html
-  Website veröffentlichen:
-  1. auf github repo FristWebsite gehen:
-    https://github.com/HandanMajied2024/FirstWebsite
-  2. Oben auf Settings (neben Insights)
-  3. Bei Code und automation runter zu Pages
-  4. Bei Branch, statt "None" "main" eingeben und Saven
-  5. Bei deaktivierung eif wieder None machen
--->
-
 <!DOCTYPE html>
-<!--Sagt dem Browser, dass er die aktuelle,
- neue Version von HTML also HTML5 nutzen soll-->
-
 <html lang="de" dir="auto">
-<!--Starttag für HTML-Document-->
-<!-- Attribute stehen immer im öffnenden Tag-->
-<!-- lang="de" ist ein Attribut gibt Sprache 
-    der Website an-->
-<!-- dir="ltr" gibt Schreibrichtung an-->
-
 <head>
-    <!-- Nicht-lesbarer Teil der Website, der 
-        Informationen über die Website enthält-->
+
     <meta name="google-site-verification" content="lsH608UN2wBOoKVJAI9mmZ7fCCrK9P-ilmO6Y5XQJHo" />
     <meta charset="UTF-8">
-    <!--Meta-Tags geben Browsern technische Infos-->
-    <!-- Gibt an welche Zeichen wie bswp. 
-            Umlaute verwendet werden-->
-    <!-- charset = character set-->
-    <!-- Mit name="" content="" kann man in Meta-Tags 
-            verschiedenen Infos angeben-->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Handan Majied">
     <meta name="website-birthday" content="09.04.2025">
     <meta name="description" content="This Website is the official CV of the computer science student Handan Majied">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Rhfs - Homepage</title>
+    <title>Homepage</title>
 
     <link rel="stylesheet" href="style.css">
-    <!-- Verbindet HTML-Seite mit CSS-Datei-->
-    <!--href="style.css" = Die CSS-Datei
-            liegt im selben Ordner und heißt style.css-->
     <link rel="icon" href="musst du noch machen">
 
 </head>
 
 <body>
-    <!-- Sichtbarer Bereich der Website-->
     <header>
-        <!--Kopfbereich der Seite-->
         <div class="container">
-            <!--HTML-Tag-->
             <div class="logo">
+                <a href="index.html">
                 <img src="pictures/logo.png" alt="Werkstatt Logo">
+                </a>
             </div>
             <nav class="navigation">
                 <ul>
-                    <li>
-                        <a href="aboutus.html">About us</a>
-                    </li>
-                    <li>
-                        <a href="services.html">Services</a>
-                    </li>
-                    <li>
-                        <a href="contactus.html">Contact us</a>
-                    </li>
-
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contactus.html">Contact us</a></li>
+                    <li><a href="ankauf.html">Ankauf</a></li>
                 </ul>
-
             </nav>
-            <!-- Menülleiste → Navigation (Links zu anderen Seiten)-->
         </div>
     </header>
     <script src="script.js"></script>
-    <!--Ladet die Datei script.js, die im selben Ordner liegt.
-        Sollte immer am Ende von Body stehen!-->
-    <!--Wenn du irgendwann mehrsprachige Inhalte hast,
-        kannst du auch lang="de" z. B. in einzelnen Absätzen setzen:
-            <p lang="en">This paragraph is in English.</p>-->
+
 </body>
 
 </html>
