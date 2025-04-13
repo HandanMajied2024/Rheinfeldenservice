@@ -38,6 +38,18 @@ header {
 .logo img {
     height: 150px;
     width: auto;
+
+    transform: transform 100.0s ease;
+    
+    /*schau wie das funktioniert*/
+}
+
+.logo img:hover {
+    /*Hover = wenn der zeiger über das obj schwebt*/
+    transform: scale(1.03);
+    /*Vergrößert Logo um 110%*/
+    filter: drop-shadow( 1px 1px rgba(0, 0, 0, 0.2));
+    /*macht Schatten beim hovern*/
 }
 
 .navigation ul{
@@ -47,4 +59,11 @@ header {
     gap: 30px;
     margin: 0;
     padding: 0;
+
+    transform: transform 2.0s ease;
+    /*schau wie das funktioniert*/
+}
+
+.navigation ul :hover{
+    transform: transform 2.0s ease;
 }
