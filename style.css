@@ -1,7 +1,7 @@
 body {
     font-family: sans-serif;
     /*Aussehen des gesamten <body>-Bereichs gestalten*/
-    background-color: azure;
+    background-color: rgb(197, 213, 221);
     text-align: center;
     margin-top: 10px;
     /*<body> oben 50 Pixel Abstand zur Browserkante.*/
@@ -11,7 +11,7 @@ body {
 
 header {
     /*CSS erkennt automatisch das HTML-Tag header*/
-    background-color: rgb(219, 178, 178);
+    background-color: rgb(255, 255, 255);
     padding: 10px 40px;
     /* Abstand des Inhalts des Inhalts 10 oben/unten 40 links/rechts*/
     
@@ -36,34 +36,84 @@ header {
 }
 
 .logo img {
-    height: 150px;
+    height: 200px;
     width: auto;
-
-    transform: transform 100.0s ease;
     
-    /*schau wie das funktioniert*/
-}
+    /* Übergangseffekt für die Vergrößerung */
+    transition: transform 1s ease;
+  
+    /* Du kannst auch andere Eigenschaften animieren, z. B. filter */
+  }
+  
 
 .logo img:hover {
     /*Hover = wenn der zeiger über das obj schwebt*/
-    transform: scale(1.03);
+    transform: scale(1.1);
     /*Vergrößert Logo um 110%*/
     filter: drop-shadow( 1px 1px rgba(0, 0, 0, 0.2));
     /*macht Schatten beim hovern*/
 }
 
+/*--------------------------------------------------------------------------------------*/
+
+.navigation{
+    background-color: #dfdddd;
+    border-radius: 100px;
+    padding: 0px 1px;
+    display: inline-block;
+
+}
 .navigation ul{
     /*bei listelem muss man zusätzlich die liste angeben hier ul*/
     display: flex; /*macht liste horizontal*/
-    list-style: none; /*entfernt aufzählungspunkte*/
-    gap: 30px;
     margin: 0;
     padding: 0;
+    gap: 15px;
 
-    transform: transform 2.0s ease;
-    /*schau wie das funktioniert*/
+    list-style: none; /*entfernt aufzählungspunkte*/
+    justify-content: center;
+    align-items: center;
 }
 
-.navigation ul :hover{
-    transform: transform 2.0s ease;
+.navigation li{
+    flex: 1;
+    transition: flex 0.3s ease;
+    text-align: center;
 }
+
+.navigation li:hover{
+    flex: 2; /*Element nimmt beim Hover mehr Platz ein */
+}
+
+.navigation li a{
+    display: block;
+    padding: 10px 20px;
+
+    color: rgb(71, 69, 69);
+    background-color: #dbdada;
+    border-radius: 100px;
+
+
+    font-weight:lighter;
+    font-size: 25px;
+    text-decoration: none;
+
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    transform: scale(1);
+    transform: transform 100.0s ease, color 0.3s ease;
+
+    white-space: nowrap;
+    font-family: 'Special Gothic Condensed One', sans-serif;
+      
+}
+
+.navigation li:hover a {
+    transform: scale(1.2); /* leicht vergrößern */
+    color: #ffffff; 
+    background-color: rgb(209, 36, 36);
+}
+
+.navigation ul:hover li:not(:hover) a {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
