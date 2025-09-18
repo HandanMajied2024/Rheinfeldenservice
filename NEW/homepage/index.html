@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rheinfeldenservice</title>
+        <link rel="stylesheet" href="../style.css">
+
+        <meta charset="UTF-8">
+        <!--Screensize für media query, keine vergrößerung/ verkleinerung beim laden -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+        <!-- Beschreibung & Keywords für Suchmaschinenoptimierung, damit die Seite über Suchmaschinen besser gefunden wird -->
+        <meta name="description" content="Website der Autowerkstatt Rheinfeldenservice.">
+        <meta name="keywords" content="Rheinfeldenservice, Autowerkstatt, Handan Majied">
+        <meta name="author" content="Handan Majied">
+        <meta name="last updated" content="19.09.2025">
+
+        <link rel="icon" href="../bilder/logo.svg">
+    </head>
+
+
+    <body id="oben" class="homepage">
+        <nav>
+            <ul>
+                <!-- links -->
+                <li><a href="index.html"><img src="../bilder/logo.svg" alt="Logo" height="100px" width="auto"></a></li>
+
+                <!-- ab hier rechts-->
+                <li class="right"><a href="index.html"><img src="icons/ED474A/home_icon_ED474A.svg" alt="Home-icon" ></a></li>
+                <li><a href="#call"><img src="icons/ED474A/call_icon_ED474A.svg" alt="Phone-icon"></a></li>
+                <li><a href="#message"><img src="icons/ED474A/messsage_icon_ED474A.svg" alt="message-icon to write me a message"></a></li>
+            </ul>
+        </nav>    
+
+        <header>
+            <h1>
+                Rheinfeldenservice
+            </h1>
+            <p>Schnell. Zuverlässig. Kompetent.</p>
+        </header>
+        <!-- ------------------------------------------------------------------ -->
+        <main>
+            <div class="intro_about_us">
+                <img src="bilder/car_repair.svg" alt="Car repair illustration">
+                <h2>About us</h2>
+                <p>
+                    Wir sind ein Familienbetrieb in Rheinfelden, der sich auf Autoreparaturen und Wartungsdienste spezialisiert hat.
+                    Mit jahrelanger Erfahrung bieten wir ... <a href="about_us.html">Erfahre mehr <img src="../icons/242424/arrow_outward_242424.svg"></a>
+                </p>
+            </div>
+            <hr>
+        <!-- ------------------------------------------------------------------ -->
+            <div class="marken">
+                <h3>Wir reparieren alle Marken!</h3>
+            </div>
+            <hr>
+        <!-- ------------------------------------------------------------------ -->
+            <div class ="intro_services">
+                <img src="bilder/car_service.svg" alt="Car service illustration">
+                <h2>Unsere Services</h2>
+                <p>
+                    Wir bieten eine breite Palette von Dienstleistungen an, darunter Ölwechsel, Bremsenservice, Reifenwechsel und vieles mehr.
+                    Unser erfahrenes Team sorgt dafür, dass Ihr Fahrzeug in bestem Zustand bleibt. 
+                    <a href="../service/service.html">Erfahre mehr <img src="../icons/242424/arrow_outward_242424.svg"></a>
+                </p>
+            </div>
+            <hr>
+        <!-- ------------------------------------------------------------------ -->
+         <div class="termin">
+            <img src="../icons/242424/kalender_242424.svg" alt="Bild einers Kalenders">
+            <h2>
+                Termine
+            </h2>
+            <p>
+                Vereinbare jetzt deinen nächsten Termin über unseren Online-Kalender!
+                <a href="../termine/termine.html">Erfahre mehr <img src="../icons/242424/arrow_outward_242424.svg"></a>
+            </p>
+         </div>
+        <!-- ------------------------------------------------------------------ -->
+            <div class="intro_reviews">
+                <img src="bilder/reviews.svg" alt="Reviews illustration">
+                <h2>Kundenbewertungen</h2>
+                <p>
+                    Unsere Kunden schätzen unsere Zuverlässigkeit und den hervorragenden Service. Lesen Sie einige unserer Bewertungen auf 
+                    <a href="https://www.google.com/search?q=rheinfeldenservice+bewertungen&rlz=1C1GCEU_deDE832DE832&oq=rheinfeldenservice+bewertungen&aqs=chrome..69i57j33i160l2.3034j0j7&sourceid=chrome&ie=UTF-8#lrd=0x4790b6f3f3f3f3f3:0x4b4b4b4b4b4b4b4b,1,,," target="_blank" rel="noopener noreferrer">Google <img src="../icons/242424/arrow_outward_242424.svg"></a>
+                    und überzeugen Sie sich selbst!
+                </p>
+            </div>
+            <hr>
+        </main>
+            <a href="#oben" class="arrow_up"><img src="icons/FFFFFF/arrow_upward_icon_FFFFFF.svg"></a>
+        <!-- ------------------------------------------------------------------ -->
+        <footer>
+            <!-- ------------------------------------------------------------------ -->
+              <ul class="footer_content">
+                <!-- Kontaktinfos + Socials -->
+                <li>
+                    <ul class="socials">
+                        <li>
+                            <h2>Rheinfeldenservice</h2>
+                        </li>
+                        <li>
+                            <img src="icons/FFFFFF/call_icon_FFFFFF.svg" alt="Phone">
+                            <span id="call">+49 176 2730 2310</span>
+                        </li>
+                        <li>
+                            <img src="icons/FFFFFF/location_icon_FFFFFF.svg" alt="Location">
+                            <span>Rheinfelden, Deutschland & Schweiz</span>
+                        </li>
+                        <!-- Social Links nebeneinander -->
+                        <li>
+                            <a href="TODO" target="_blank" rel="noopener noreferrer">
+                                <img src="icons/FFFFFF/linkedin_logo_white.svg" alt="Instagram">
+                                <span>Instagram</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- -------------- -->
+                <li>
+                    <h3 id="message">Schreib uns eine Nachricht!</h3>
+                    <form class="contact-form" action="TODO" method="POST">
+                        <div class="form-left">
+                            <input type="text" name="Vorname" placeholder="Vorname" required>
+                            <input type="text" name="Nachname" placeholder="Nachname" required>
+                            <input type="tel" name="Telefonnummer" placeholder="Telefonnummer" required>
+                            <input type="email" name="E-Mail" placeholder="E-Mail..." required>
+                        </div>
+
+                        <div class="form-right">
+                            <textarea name="Nachricht" rows="9" placeholder="Schreibe eine Nachricht..." required></textarea>
+                            <div class="form-actions">
+                            <button type="submit">abschicken</button>
+                            </div>
+                        </div>
+                    </form>
+                </li>
+            </ul>
+            <!-- ------------------------------------------------------------------ -->
+            <ul class="footer_bottom">
+                <li>
+                    <ul>
+                        <li><a href="legal_notice.html">Impressum</a></li>
+                        <li>|</li>
+                        <li><a href="privacy_policy.html">Datenschutzverordnung</li>
+                        <li>|</li>
+                        <li>&copy; 2025 Created by Handan Majied. All rights reserved.</li>
+                    </ul>
+                </li>
+                <li>Last updated: 15.09.2025</li>
+            </ul>
+        </footer>
+    </body>
+</html>
