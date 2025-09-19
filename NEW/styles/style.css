@@ -436,6 +436,30 @@ main.kontakt{
   padding: 7% 15%;
 } 
 
+/* Route – Adresse */
+section.adresse {
+  text-align: center;         /* Text zentrieren */
+  padding: 5% 10%;            /* Innenabstand */
+}
+
+section.adresse h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 20px;
+  color: #202020;
+}
+
+section.adresse p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #333;
+  background: #f9f9f9;
+  padding: 20px 30px;
+  border-radius: 10px;
+  display: inline-block;      /* Box orientiert sich an Textbreite */
+  text-align: left;           /* Adresse in Block-Form, nicht alles mittig */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
 
 
 /* ------------------------------------------------------------------------- */
