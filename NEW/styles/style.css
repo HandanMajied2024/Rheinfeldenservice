@@ -1,0 +1,763 @@
+html {
+  scroll-behavior: smooth;
+}
+/* FONTS-------------------------------------------------------------------- */
+
+@font-face {
+    font-family: 'migha';
+    src: url('fonts/migha/Migha-Black.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'blox-brk';
+    src: url('fonts/blox-brk/Blox2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'manbow';
+    src: url('fonts/manbow/Manbow\ Clear.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'inter';
+    src: url(fonts/Inter/Inter-VariableFont_opsz\,wght.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* SCREENSIZE--------------------------------------------------------------- */
+/* TODO Responsitivity */
+/* Ab 400px (größere Smartphones) */
+@media (min-width: 400px) {
+
+}
+
+/* Ab 460px (größere Smartphones) */
+@media (min-width: 460px) {
+
+}
+
+/* Ab 576px (kleine Tablets / Smartphones quer) */
+@media (min-width: 576px) {
+
+}
+
+/* Ab 768px (Tablets) */
+@media (min-width: 768px) {
+
+}
+
+/* Ab 992px (kleine Laptops) */
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1080px) {
+
+}
+
+/* Ab 1200px (große Desktops / MacBooks) */
+@media (min-width: 1200px) {
+}
+
+
+/* HEADER ------------------------------------------------------------------ */
+header.index {
+    background-image: url("../bilder/werkzeug.jpg");
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+
+    width: 100%;
+    height: auto;
+
+    padding-top: 15%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 20%;
+
+    color: #000000;
+}
+header.ueber_uns {
+    background-image: url("../bilder/reparatur.jpg");
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+
+    width: 100%;
+    height: auto;
+
+    padding-top: 15%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 20%;
+
+    color: #000000;
+}
+
+header.service {
+    background-image: url("../bilder/motor.jpg");
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+
+    width: 100%;
+    height: auto;
+
+    padding-top: 15%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 20%;
+
+    color: #000000;
+}
+
+header.kontakt {
+    background-image: url("../bilder/baba_mit_motor.jpg");
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+
+    width: 100%;
+    height: auto;
+
+    padding-top: 15%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 20%;
+
+    color: #000000;
+}
+
+header.route {
+    background-image: url("../bilder/motor_innen.jpg");
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+
+    width: 100%;
+    height: auto;
+
+    padding-top: 15%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 20%;
+
+    color: #000000;
+}
+
+
+header .content {
+    position: relative;
+
+    background: #ffffffd4; /* Halbtransparenter Hintergrund für bessere Lesbarkeit */
+    border-radius: 10px;
+    z-index: 2;
+
+    padding: 20px 40px;
+    margin: 0;
+}
+
+
+header h1 {
+    font-size: clamp(2.5rem, 7vw, 6rem);
+    letter-spacing: clamp(-3px, -0.9vw, -0.6rem);
+    margin: 0;
+}
+
+header p {
+    font-size: clamp(20px, 2rem, 40px);
+    letter-spacing: clamp(-2px, -0.5vw, -7px);
+    margin-top: -10px;
+}
+
+
+
+
+/* ------------------------------------------------------------------------- */
+body {
+  background-color: #ffffff;
+  font-family: "inter", sans-serif;
+  color: #000000;
+  font-weight: normal;
+
+  padding: 0;
+  margin: 0;
+}
+
+
+
+h2 {
+    color: #202020;
+    font-size: clamp(40px,3.5vw,200px);
+    font-weight: bold;
+}
+
+h3 {
+  color: #ffffff;
+  font-size: clamp(30px,3.0vw,200px);
+  font-weight: lighter;
+}
+
+a {
+    font-family: 'inter', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    
+} 
+
+a.button_1 {
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 10px;
+
+  font-size: 1.2rem;        /* Textgröße */
+  display: inline-block;  /* Nur so breit wie der Text */
+  padding: 1em 1em;     /* etwas Innenabstand */
+  width: auto;            /* Sicherheit */
+  align-self: flex-start; /* verhindert, dass er sich im Flex-Container streckt */
+  box-sizing: border-box;
+}
+
+
+
+p {
+  color: #1c1c1c;
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+
+/* Navbar ------------------------------------------------------------------ */
+nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    padding: 0;
+    margin: 0;
+}
+
+nav ul{
+    background-color: #ffffff;
+    /* background-color: #950000; */
+    top: 0;
+    width: 100%;
+    height: 100px;
+
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    box-sizing: border-box;
+
+    padding: 0 2%; 
+    margin: 0;
+}
+
+nav ul li.right {
+    margin-left: auto; /* Abstand links */
+} 
+
+nav ul li a {
+    color: #000000;
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+
+nav ul li a.aktuelle_seite {
+    color: #ffffff;
+    background: #000000;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    border-color: #000000;
+
+    padding: 10px 20px;
+    white-space: nowrap;   /* Text bricht nicht um */
+    display: inline-block; /* sichert, dass Padding korrekt wirkt */
+}
+
+
+nav ul li {
+    margin: 0 2%;
+}
+
+/* Aktiver Button */
+nav ul li#current_page {
+    position: relative;
+    padding: 5px 20px;
+    z-index: 2;
+}
+/* Main -------------------------------------------------------------------- */
+
+main {
+  background-color: #ffffff;
+  box-sizing: border-box;
+
+  padding: 0;
+  margin: 0;
+}
+
+
+a.button_1:hover {
+  background-color: #333333;
+  transform: translateY(-2px);
+}
+
+/* Layout Container */
+ul.layout_1, 
+ul.layout_2 {
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  box-sizing: border-box;
+  gap: 5%; /* Abstand zwischen Bild und Text */
+  padding: 5% 10%;
+}
+
+/* Gemeinsames Styling für Listenelemente */
+ul.layout_1 li, 
+ul.layout_2 li {
+  flex: 1; /* gleiche Breite */
+}
+
+/* Bilder gleichmäßig skalieren */
+ul.layout_1 img,
+ul.layout_2 img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Textblöcke */
+ul.layout_1 li div, 
+ul.layout_2 li div, 
+ul.layout_2 li {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Für kleine Bildschirme (mobile) */
+@media (max-width: 768px) {
+  ul.layout_1, 
+  ul.layout_2 {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  ul.layout_1 li, 
+  ul.layout_2 li {
+    flex: unset;
+    width: 100%;
+  }
+
+  ul.layout_1 img,
+  ul.layout_2 img {
+    max-width: 100%;
+  }
+}
+
+/* Bullet-Liste in "und vieles mehr"-Section */
+ul.layout_2 li ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+ul.layout_2 li ul li {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  color: #202020;
+}
+
+/* Kontaktseite Formular – groß und zentriert */
+.contact-form-page {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+.contact-form-page .form-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form-page .form-right {
+  flex: 2; /* rechte Seite breiter = Nachricht im Fokus */
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-page textarea {
+  min-height: 300px;   /* viel größer */
+  max-height: none;
+  resize: vertical;
+  font-size: 1rem;
+  padding: 15px 20px;
+}
+
+.contact-form-page input,
+.contact-form-page textarea {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-family: "inter", sans-serif;
+  font-size: 1rem;
+  padding: 12px 16px;
+  box-sizing: border-box;
+}
+
+.contact-form-page button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  background-color: #EAC452;
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact-form-page button:hover {
+  background-color: #47ed60;
+  color: #242424;
+}
+
+main.kontakt{
+  padding: 7% 15%;
+} 
+
+/* Route – Adresse */
+section.adresse {
+  text-align: center;         /* Text zentrieren */
+  padding: 5% 10%;            /* Innenabstand */
+}
+
+section.adresse h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 20px;
+  color: #202020;
+}
+
+section.adresse p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #333;
+  background: #f9f9f9;
+  padding: 20px 30px;
+  border-radius: 10px;
+  display: inline-block;      /* Box orientiert sich an Textbreite */
+  text-align: left;           /* Adresse in Block-Form, nicht alles mittig */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+
+
+
+/* ------------------------------------------------------------------------- */
+
+div.marken {
+  background: #1c1c1c ;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 1%;
+  font-weight: normal;
+}
+/* ARROW UP ---------------------------------------------------------------- */
+
+.arrow_up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #000000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* HOVER ------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------- */
+
+/* FOOTER ------------------------------------------------------------------ */
+
+footer {
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+    padding: 0;
+    margin: 0;
+
+    width: 100%;
+    height: auto;
+
+
+    background-color:#242424;
+    color: #FFFFFF;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+footer h2 {
+    color: #ffffff;
+    font-size: clamp(25px,1.5vw,70px);
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+footer h3 {
+    color: #ffffff;
+    font-size: clamp(20px,1vw,50px);
+    font-weight: normal;
+    margin: 0;
+    padding-left: 4%;
+}
+
+footer a {
+  font-family: inter, sans-serif;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* --------------------------------- */
+ul.footer_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* vertikal zentriert */
+    height: auto;
+    width: 100%;
+    box-sizing: border-box; /* damit padding nicht die Breite beeinflusst */
+    /* Abstände links und rechts */
+    padding: 0 10%;
+}
+
+ul.footer_content li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+/* --------------------------------- */
+ul.socials {
+  font-size: 0.9rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px; 
+}
+
+ul.socials li {
+  display: flex;
+  align-items: center;  /* vertikal zentriert */
+  gap: 8px;             /* Abstand Icon ↔ Text */
+}
+
+ul.socials li img {
+  width: 24px;
+  height: auto;
+}
+
+/* Links in Social-Bereich */
+ul.socials li a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  text-decoration: none;
+  font-family: "inter", sans-serif;
+}
+
+/* Nur LinkedIn + GitHub nebeneinander */
+.social-links {
+  display: flex;
+  gap: 20px;  /* Abstand zwischen LinkedIn und GitHub */
+}
+
+
+.social-links a:hover {
+  color: #47ed60;
+  font-weight: bold;
+}
+
+/* Telefonnummer hervorheben, wenn per #call angesprungen */
+span#call:target {
+  animation: highlight-call 10s ease forwards;
+}
+
+@keyframes highlight-call {
+  0% {
+    color: #47ed60;
+    font-weight: bold;
+  }
+  100% {
+    color: #fff;          /* ursprüngliche Farbe wiederherstellen */
+    font-weight: normal;
+  }
+}
+
+
+span#call {
+  display: inline-block;   /* verhindert Layout-Verschieben */
+  min-width: max-content;  /* Nummer bleibt stabil */
+}
+
+/* "Get to know us" hervorheben, wenn per #message angesprungen */
+h3#message:target {
+  animation: highlight-message 10s ease forwards;
+}
+
+@keyframes highlight-message {
+  0% {
+    color: #47ed60;
+    font-weight: bold;
+  }
+  100% {
+    color: #fff;          /* ursprüngliche Farbe wiederherstellen */
+    font-weight: normal;
+  }
+}
+
+
+h3#message {
+  display: inline-block;   /* verhindert Layout-Verschieben */
+  min-width: max-content;  /* Nummer bleibt stabil */
+}
+
+
+/* --------------------------------- */
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;       /* damit es bei kleinen Bildschirmen umbricht */
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Einheitliches Styling für Eingabefelder und Textareas */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-family: "inter", sans-serif;
+  font-size: 0.7rem;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+
+/* Eingabefelder kompakt */
+.contact-form input {
+  height: 28px;
+  line-height: 1.2;
+}
+
+/* Textarea für Nachrichten größer */
+.contact-form textarea {
+  min-height: 80px;
+  max-height: 120px;
+  resize: none;
+}
+
+/* rechte Message-Box */
+.contact-form .form-right textarea {
+  flex: 1;                 
+  min-height: 80px;        /* kleiner als vorher */
+  max-height: 120px;       /* nicht zu groß werden */
+}
+
+/* Linke Spalte */
+.contact-form .form-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: fit-content;
+}
+
+/* Rechte Spalte */
+.contact-form .form-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
+}
+
+/* Button über die volle Breite */
+.contact-form .form-actions {
+  width: 100%;
+  text-align: right;
+  margin-top: 5px;
+}
+
+.contact-form button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 30px;
+  background-color: #EAC452;
+  color: #000000;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #47ed60;
+  color: #242424;
+  font-weight: bold;
+}
+
+/* --------------------------------- */
+
+ul.footer_bottom {
+  display: flex;
+  flex-wrap: wrap;              /* bricht auf kleine Bildschirme um */
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  padding: 5px 10%;
+  margin: 0;
+
+  background-color: #000000;
+  color: #919090;
+  font-size: 0.8rem;
+  font-weight: lighter;
+  list-style: none;             /* Punkte entfernen */
+  box-sizing: border-box;
+}
+
+ul.footer_bottom li {
+  margin: 0 5px;
+  padding: 0;
+}
+
+ul.footer_bottom li a {
+  color: #919090;
+  text-decoration: none;
+  font-weight: lighter;
+}
+
+ul.footer_bottom li a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* ------------------------------------------------------------------------- */
