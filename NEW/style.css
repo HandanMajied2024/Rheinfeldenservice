@@ -66,6 +66,9 @@ html {
 
 
 /* HEADER ------------------------------------------------------------------ */
+header {
+  max-height: 600px;
+}
 header.index {
     background-image: url("../bilder/werkzeug.jpg");
     background-repeat: no-repeat;
@@ -80,7 +83,8 @@ header.index {
     padding-bottom: 20%;
 
     color: #000000;
-}
+
+  }
 header.ueber_uns {
     background-image: url("../bilder/reparatur.jpg");
     background-repeat: no-repeat;
@@ -204,7 +208,7 @@ a {
 } 
 
 a.button_1 {
-  background-color: #000000;
+  background-color: #d60000;
   color: #ffffff;
   border-radius: 10px;
 
@@ -216,6 +220,9 @@ a.button_1 {
   box-sizing: border-box;
 }
 
+button.kontakt {
+  margin-top: 2%;
+}
 
 
 p {
@@ -433,8 +440,8 @@ ul.layout_2 li ul li {
   padding: 12px 24px;
   border: none;
   border-radius: 30px;
-  background-color: #EAC452;
-  color: #000;
+  background-color: #d60000;
+  color: #ffffff;
   font-size: 1.1rem;
   font-weight: bold;
   cursor: pointer;
@@ -726,8 +733,9 @@ h3#message {
   padding: 5px 10px;
   border: none;
   border-radius: 30px;
-  background-color: #EAC452;
-  color: #000000;
+  background-color: #d60000;
+  color: #ffffff;
+  font-weight: bold;
   font-size: 0.85rem;
   cursor: pointer;
 }
