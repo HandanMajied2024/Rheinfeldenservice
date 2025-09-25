@@ -1,0 +1,9 @@
+✅  rm png from bilder
+line-height css
+footer message box smaller
+logos in rot statt gelb
+datenschutzverordnung bilder privat
+button contact us margin top
+✅  index muss in root liegen!!!
+✅  html files in root
+bei mehreren sprachen -> sprachordner mache
