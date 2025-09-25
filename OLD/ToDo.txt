@@ -1,2 +1,0 @@
-make Icon for Symbol im Browser-Tab (neben dem Titel)
-16x16 pixel
